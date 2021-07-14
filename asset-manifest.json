@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/RAK4TW/website/static/css/main.c0d76193.chunk.css",
+    "main.js": "/RAK4TW/website/static/js/main.7444694c.chunk.js",
+    "main.js.map": "/RAK4TW/website/static/js/main.7444694c.chunk.js.map",
+    "runtime-main.js": "/RAK4TW/website/static/js/runtime-main.e1a2160a.js",
+    "runtime-main.js.map": "/RAK4TW/website/static/js/runtime-main.e1a2160a.js.map",
+    "static/js/2.c87f2904.chunk.js": "/RAK4TW/website/static/js/2.c87f2904.chunk.js",
+    "static/js/2.c87f2904.chunk.js.map": "/RAK4TW/website/static/js/2.c87f2904.chunk.js.map",
+    "index.html": "/RAK4TW/website/index.html",
+    "static/css/main.c0d76193.chunk.css.map": "/RAK4TW/website/static/css/main.c0d76193.chunk.css.map",
+    "static/js/2.c87f2904.chunk.js.LICENSE.txt": "/RAK4TW/website/static/js/2.c87f2904.chunk.js.LICENSE.txt",
+    "static/media/Koskela_Ryan_Resume.59603317.pdf": "/RAK4TW/website/static/media/Koskela_Ryan_Resume.59603317.pdf",
+    "static/media/agility.0c882df1.jpg": "/RAK4TW/website/static/media/agility.0c882df1.jpg",
+    "static/media/bgi.e8294693.jpg": "/RAK4TW/website/static/media/bgi.e8294693.jpg",
+    "static/media/style.css": "/RAK4TW/website/static/media/bgridopacity.be08e15c.png",
+    "static/media/byte_thumb.888b997c.jpg": "/RAK4TW/website/static/media/byte_thumb.888b997c.jpg",
+    "static/media/intact-pic.3b92c9a5.jpg": "/RAK4TW/website/static/media/intact-pic.3b92c9a5.jpg",
+    "static/media/jlrfd.aa01936d.jpg": "/RAK4TW/website/static/media/jlrfd.aa01936d.jpg",
+    "static/media/mardo.01a95e9a.jpg": "/RAK4TW/website/static/media/mardo.01a95e9a.jpg",
+    "static/media/mdc1.068d0781.jpg": "/RAK4TW/website/static/media/mdc1.068d0781.jpg",
+    "static/media/mdc2.f81b1292.jpg": "/RAK4TW/website/static/media/mdc2.f81b1292.jpg",
+    "static/media/mdc3.7ff4d5ad.jpg": "/RAK4TW/website/static/media/mdc3.7ff4d5ad.jpg",
+    "static/media/mdc4.d31ee3f1.jpg": "/RAK4TW/website/static/media/mdc4.d31ee3f1.jpg",
+    "static/media/ryan.ad400473.jpg": "/RAK4TW/website/static/media/ryan.ad400473.jpg",
+    "static/media/sda.8b014a17.jpg": "/RAK4TW/website/static/media/sda.8b014a17.jpg",
+    "static/media/vmt.1c15f6ce.jpg": "/RAK4TW/website/static/media/vmt.1c15f6ce.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1a2160a.js",
+    "static/js/2.c87f2904.chunk.js",
+    "static/css/main.c0d76193.chunk.css",
+    "static/js/main.7444694c.chunk.js"
+  ]
+}
