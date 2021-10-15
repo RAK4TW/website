@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.ce305af8.chunk.css",
+    "main.css": "/website/static/css/main.17731a22.chunk.css",
     "main.js": "/website/static/js/main.c7248fbb.chunk.js",
     "main.js.map": "/website/static/js/main.c7248fbb.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.c4068114.js",
@@ -8,7 +8,7 @@
     "static/js/2.4dbf3cf0.chunk.js": "/website/static/js/2.4dbf3cf0.chunk.js",
     "static/js/2.4dbf3cf0.chunk.js.map": "/website/static/js/2.4dbf3cf0.chunk.js.map",
     "index.html": "/website/index.html",
-    "static/css/main.ce305af8.chunk.css.map": "/website/static/css/main.ce305af8.chunk.css.map",
+    "static/css/main.17731a22.chunk.css.map": "/website/static/css/main.17731a22.chunk.css.map",
     "static/js/2.4dbf3cf0.chunk.js.LICENSE.txt": "/website/static/js/2.4dbf3cf0.chunk.js.LICENSE.txt",
     "static/media/style.css": "/website/static/media/bgridopacity.be08e15c.png",
     "static/media/Koskela_Ryan_Resume.59603317.pdf": "/website/static/media/Koskela_Ryan_Resume.59603317.pdf",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.c4068114.js",
     "static/js/2.4dbf3cf0.chunk.js",
-    "static/css/main.ce305af8.chunk.css",
+    "static/css/main.17731a22.chunk.css",
     "static/js/main.c7248fbb.chunk.js"
   ]
 }
