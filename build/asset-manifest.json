@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.c853a884.chunk.css",
-    "main.js": "/website/static/js/main.69896f9f.chunk.js",
-    "main.js.map": "/website/static/js/main.69896f9f.chunk.js.map",
+    "main.css": "/website/static/css/main.ce305af8.chunk.css",
+    "main.js": "/website/static/js/main.c7248fbb.chunk.js",
+    "main.js.map": "/website/static/js/main.c7248fbb.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.c4068114.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.c4068114.js.map",
-    "static/js/2.fd360aff.chunk.js": "/website/static/js/2.fd360aff.chunk.js",
-    "static/js/2.fd360aff.chunk.js.map": "/website/static/js/2.fd360aff.chunk.js.map",
+    "static/js/2.4dbf3cf0.chunk.js": "/website/static/js/2.4dbf3cf0.chunk.js",
+    "static/js/2.4dbf3cf0.chunk.js.map": "/website/static/js/2.4dbf3cf0.chunk.js.map",
     "index.html": "/website/index.html",
-    "static/css/main.c853a884.chunk.css.map": "/website/static/css/main.c853a884.chunk.css.map",
-    "static/js/2.fd360aff.chunk.js.LICENSE.txt": "/website/static/js/2.fd360aff.chunk.js.LICENSE.txt",
+    "static/css/main.ce305af8.chunk.css.map": "/website/static/css/main.ce305af8.chunk.css.map",
+    "static/js/2.4dbf3cf0.chunk.js.LICENSE.txt": "/website/static/js/2.4dbf3cf0.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/website/static/media/bgridopacity.be08e15c.png",
     "static/media/Koskela_Ryan_Resume.59603317.pdf": "/website/static/media/Koskela_Ryan_Resume.59603317.pdf",
     "static/media/agility.0c882df1.jpg": "/website/static/media/agility.0c882df1.jpg",
     "static/media/bgi.e8294693.jpg": "/website/static/media/bgi.e8294693.jpg",
-    "static/media/style.css": "/website/static/media/bgridopacity.be08e15c.png",
     "static/media/byte_thumb.888b997c.jpg": "/website/static/media/byte_thumb.888b997c.jpg",
     "static/media/intact-pic.3b92c9a5.jpg": "/website/static/media/intact-pic.3b92c9a5.jpg",
     "static/media/jlrfd.aa01936d.jpg": "/website/static/media/jlrfd.aa01936d.jpg",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c4068114.js",
-    "static/js/2.fd360aff.chunk.js",
-    "static/css/main.c853a884.chunk.css",
-    "static/js/main.69896f9f.chunk.js"
+    "static/js/2.4dbf3cf0.chunk.js",
+    "static/css/main.ce305af8.chunk.css",
+    "static/js/main.c7248fbb.chunk.js"
   ]
 }
