@@ -60,7 +60,7 @@ class Main extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-6">
-                  <h1 className="Main-title"><Link to="/website/">Ryan Koskela</Link></h1>
+                  <h1 className="Main-title"><Link to="/">Ryan Koskela</Link></h1>
                   <p className="title-subheading">Web developer, writer, sports and food/drink aficionado, and so much more</p>
                 </div>
                 <div className="col-md-6">
@@ -79,7 +79,7 @@ class Main extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <Switch>
-                    <Route exact path='/website/' render={(props) => <Mainboxes {...props} stateinfo={this.state} />} />
+                    <Route exact path='/' render={(props) => <Mainboxes {...props} stateinfo={this.state} />} />
                     <Route exact path="/about" component={DetailboxAbout} />
                     <Route exact path="/projects" component={DetailboxProjects} />
                     <Route exact path="/contact" component={DetailboxContact} />
