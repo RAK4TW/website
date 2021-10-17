@@ -1,7 +1,11 @@
 {
   "name": "website",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "http://www.ryanak.net",
+=======
+  "homepage": "/",
+>>>>>>> 5ddefcba3b7f045d2d13fd8d5b113eced4a95d42
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
