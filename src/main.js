@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import Techlogos from './components/techlogos.js';
 import DetailboxAbout from './components/detailbox/detailbox-about.js';
 import DetailboxContact from './components/detailbox/detailbox-contact.js';
@@ -46,15 +46,19 @@ class Main extends Component {
 
   render() {
 
+
+
     function initializeReactGA() {
       ReactGA.initialize('UA-126044321-1');
       ReactGA.pageview('/homepage');
     }
 
+
     initializeReactGA();
     console.log(this.props);
     return (
-      <Router>
+
+      <HashRouter>
         <div>
           <header className="Main-header">
             <div className="container">
@@ -84,6 +88,9 @@ class Main extends Component {
                     <Route exact path="/projects" component={DetailboxProjects} />
                     <Route exact path="/contact" component={DetailboxContact} />
                     <Route exact path="/ideas" component={DetailboxIdeas} />
+                    <Route path="*">
+                      <Redirect to="/" />
+                    </Route>
                   </Switch>
                 </div>
               </div>
@@ -98,9 +105,11 @@ class Main extends Component {
             </div>
           </footer>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
+
+
 }
 
 export default Main;
