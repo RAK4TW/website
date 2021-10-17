@@ -83,6 +83,7 @@ class Main extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <Switch>
+        
                     <Route exact path='/' render={(props) => <Mainboxes {...props} stateinfo={this.state} />} />
                     <Route exact path="/about" component={DetailboxAbout} />
                     <Route exact path="/projects" component={DetailboxProjects} />
@@ -91,6 +92,7 @@ class Main extends Component {
                     <Route path="*">
                       <Redirect to="/" />
                     </Route>
+                    
                   </Switch>
                 </div>
               </div>
