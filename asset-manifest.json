@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.53ca8d24.chunk.css",
-    "main.js": "/static/js/main.40ae1b96.chunk.js",
-    "main.js.map": "/static/js/main.40ae1b96.chunk.js.map",
+    "main.js": "/static/js/main.a604df15.chunk.js",
+    "main.js.map": "/static/js/main.a604df15.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.408c6aad.js",
     "runtime-main.js.map": "/static/js/runtime-main.408c6aad.js.map",
-    "static/js/2.389ede18.chunk.js": "/static/js/2.389ede18.chunk.js",
-    "static/js/2.389ede18.chunk.js.map": "/static/js/2.389ede18.chunk.js.map",
+    "static/js/2.113b7ccd.chunk.js": "/static/js/2.113b7ccd.chunk.js",
+    "static/js/2.113b7ccd.chunk.js.map": "/static/js/2.113b7ccd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.53ca8d24.chunk.css.map": "/static/css/main.53ca8d24.chunk.css.map",
-    "static/js/2.389ede18.chunk.js.LICENSE.txt": "/static/js/2.389ede18.chunk.js.LICENSE.txt",
+    "static/js/2.113b7ccd.chunk.js.LICENSE.txt": "/static/js/2.113b7ccd.chunk.js.LICENSE.txt",
     "static/media/style.css": "/static/media/bgridopacity.be08e15c.png",
     "static/media/Koskela_Ryan_Resume.59603317.pdf": "/static/media/Koskela_Ryan_Resume.59603317.pdf",
     "static/media/agility.0c882df1.jpg": "/static/media/agility.0c882df1.jpg",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.408c6aad.js",
-    "static/js/2.389ede18.chunk.js",
+    "static/js/2.113b7ccd.chunk.js",
     "static/css/main.53ca8d24.chunk.css",
-    "static/js/main.40ae1b96.chunk.js"
+    "static/js/main.a604df15.chunk.js"
   ]
 }
