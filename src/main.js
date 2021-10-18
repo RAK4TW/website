@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link, Switch, Redirect } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import Techlogos from './components/techlogos.js';
 import DetailboxAbout from './components/detailbox/detailbox-about.js';
 import DetailboxContact from './components/detailbox/detailbox-contact.js';
@@ -58,7 +58,7 @@ class Main extends Component {
     console.log(this.props);
     return (
 
-      <HashRouter>
+      <Router basename={`/${process.env.PUBLIC_URL}`} forceRefresh={true}>
         <div>
           <header className="Main-header">
             <div className="container">
@@ -107,7 +107,7 @@ class Main extends Component {
             </div>
           </footer>
         </div>
-      </HashRouter>
+      </Router>
     );
   }
 
