@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Techlogos (props) {
+export default function Techlogos () {
 return (  <span>
           <i className="fab fa-react" alt="React" title="React"></i>
           <i className="fab fa-html5" alt="HTML5" title="HTML5"></i>

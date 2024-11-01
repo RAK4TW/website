@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function Navlink (props) {
+export default function Navlink ({myinfo, title, currentClass}) {
   function showDetailBox(key, mainboxes) {
     setTimeout(function(){
     mainboxes[key].classList.add("d-none");
 },500);
 }
 
-function handleClick(theclass) {
+function handleClick() {
 let mainboxes = document.querySelectorAll(".mainbox");
 for(let i = 0; i < mainboxes.length; i++) {
     mainboxes[i].classList.add("animated","fadeOut");
@@ -18,7 +18,7 @@ for(let i = 0; i < mainboxes.length; i++) {
 
 var innerdata = [];
 
-props.myinfo.map((elem) => {
+myinfo.map((elem) => {
   innerdata.header = elem.header;
   innerdata.tagline = elem.tagline;
   innerdata.class = elem.class;
@@ -27,7 +27,7 @@ props.myinfo.map((elem) => {
 
 
     return (
-      <span onClick={() => {props.setclass(props.currentClass); handleClick(innerdata.class) }}>{props.title}</span>
+      <span onClick={() => {props.setclass(currentClass); handleClick(innerdata.class) }}>{title}</span>
     );
   }
 

@@ -16,13 +16,13 @@ import intactpic from '../../assets/intact-pic.jpg';
 
 
 
-export default function DetailboxProjects(props) {
+export default function DetailboxProjects({history}) {
   return (
     <Animated animationIn="fadeInRight" animationOut="fadeOutDown" isVisible={true} animationInDuration="500">
     <div className="white-bg">
       <div className="detailbox">
         <div className="row">
-          <div className="col-9"><h1>Projects</h1></div><div className="col-3 closex text-right" onClick={() => {props.history.replace("/")}}>Close [X]</div>
+          <div className="col-9"><h1>Projects</h1></div><div className="col-3 closex text-right" onClick={() => {history.replace("/")}}>Close [X]</div>
           </div>
         <div className='row'>
           <div className='col-md-12'>
@@ -37,7 +37,7 @@ export default function DetailboxProjects(props) {
           </div>
           <div className='col-md-4 text-center'><a target='_blank' rel="noopener noreferrer" href='http://www.byteme.com'><img alt="Byte" className='img-fluid' src={byte} /></a></div>
         </div>
-     
+
         <div className='row project-entry'>
           <div className='col-md-8'>
             <h2 className='about-format'>Agility Fuel Solutions</h2>

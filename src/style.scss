@@ -1,7 +1,6 @@
 body,
 body * {
 	font-family: 'Bangers', cursive;
-	letter-spacing: 1px;
 }
 
 @mixin blkblug {
@@ -110,6 +109,7 @@ h1.Main-title {
 .title-subheading {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1em;
+	font-weight: 300;
 }
 
 .Main-title,
@@ -155,9 +155,9 @@ h1.Main-title {
 	background-color: #fff;
 	border: 1px solid #ccc;
 	p {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 1.3em;
-		letter-spacing: normal;
+		font-family: 'Oswald', sans-serif;
+		font-size: 1rem;
+		font-weight:300;
 	}
 	a {
 		@include blkblug;
@@ -169,7 +169,6 @@ h1.Main-title {
 	.infoList li {
 		font-size: 1.4em;
 		list-style: none;
-		color: #484848;
 		padding-left: 8px;
 		border-left: 3px solid #ccc;
 		margin-bottom: 10px;

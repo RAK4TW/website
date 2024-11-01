@@ -7,7 +7,7 @@ import DetailboxProjects from './components/detailbox/detailbox-projects.js';
 import DetailboxIdeas from './components/detailbox/detailbox-ideas.js';
 import Mainboxes from './components/combined-mainboxes.js';
 import ReactGA from 'react-ga';
-import './style.css';
+import './style.scss';
 
 
 
@@ -83,7 +83,7 @@ class Main extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <Switch>
-        
+
                     <Route exact path='/' render={(props) => <Mainboxes {...props} stateinfo={this.state} />} />
                     <Route exact path="/about" component={DetailboxAbout} />
                     <Route exact path="/projects" component={DetailboxProjects} />
@@ -92,7 +92,7 @@ class Main extends Component {
                     <Route path="*">
                       <Redirect to="/" />
                     </Route>
-                    
+
                   </Switch>
                 </div>
               </div>
