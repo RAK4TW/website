@@ -193,13 +193,15 @@ h1.Main-title {
 	}
 	p {
 		font-family: 'Oswald', sans-serif;
-		font-size: 1.5em;
+    	font-size: 1.1rem;
+    	font-weight: 300;
 	}
 	a {
 		@include blkblug;
 	}
 	.about-format {
 		font-family: 'Oswald', sans-serif;
+		font-size: 1.5rem
 	}
 	.projects-code>.row {
 		margin-bottom: 20px;
