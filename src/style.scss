@@ -1,19 +1,31 @@
 body,
 body * {
-	font-family: 'Bangers', cursive;
+	font-family: "Bangers", cursive;
 }
 
 @mixin blkblug {
-	color: #0078d7
+	color: #0078d7;
 }
 
 @mixin blkblbkg {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0015ff+0,0a0a0a+100&0.23+0,0.52+100 */
-	background: -moz-linear-gradient(top, rgba(0, 21, 255, 0.23) 0%, rgba(10, 10, 10, 0.52) 100%);
+	background: -moz-linear-gradient(
+		top,
+		rgba(0, 21, 255, 0.23) 0%,
+		rgba(10, 10, 10, 0.52) 100%
+	);
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0, 21, 255, 0.23) 0%, rgba(10, 10, 10, 0.52) 100%);
+	background: -webkit-linear-gradient(
+		top,
+		rgba(0, 21, 255, 0.23) 0%,
+		rgba(10, 10, 10, 0.52) 100%
+	);
 	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0, 21, 255, 0.23) 0%, rgba(10, 10, 10, 0.52) 100%);
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 21, 255, 0.23) 0%,
+		rgba(10, 10, 10, 0.52) 100%
+	);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b0015ff', endColorstr='#850a0a0a', GradientType=0);
 	/* IE6-9 */
@@ -21,7 +33,7 @@ body * {
 
 @-webkit-keyframes zoombg {
 	0% {
-		opacity: 0.10;
+		opacity: 0.1;
 		background-size: 100%;
 	}
 	50% {
@@ -29,14 +41,14 @@ body * {
 		background-size: 130%;
 	}
 	100% {
-		opacity: 0.10;
+		opacity: 0.1;
 		background-size: 160%;
 	}
 }
 
 @keyframes zoombg {
 	0% {
-		opacity: 0.10;
+		opacity: 0.1;
 		background-size: 100%;
 	}
 	50% {
@@ -44,12 +56,12 @@ body * {
 		background-size: 130%;
 	}
 	100% {
-		opacity: 0.10;
+		opacity: 0.1;
 		background-size: 160%;
 	}
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 	.mainbox {
 		min-height: 250px;
 	}
@@ -66,13 +78,13 @@ body * {
 	text-align: left;
 	box-sizing: border-box;
 	overflow: hidden;
-  position: relative;
-  min-height:645px;
+	position: relative;
+	min-height: 645px;
 }
 
 .Main::after {
 	content: "";
-	background-image: url('./assets/bgridopacity.png');
+	background-image: url("./assets/bgridopacity.png");
 	background-position: center center;
 	top: 0;
 	left: 0;
@@ -82,7 +94,7 @@ body * {
 	z-index: -1;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
 	.Main::after {
 		animation: zoombg 16s linear infinite;
 		-webkit-animation: zoombg 16s linear infinite;
@@ -107,9 +119,10 @@ h1.Main-title {
 }
 
 .title-subheading {
-	font-family: 'Oswald', sans-serif;
+	font-family: "Oswald", sans-serif;
 	font-size: 1em;
 	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 .Main-title,
@@ -125,7 +138,7 @@ h1.Main-title {
 	padding: 0;
 	li {
 		display: inline-block;
-		font-family: 'Bangers', cursive;
+		font-family: "Bangers", cursive;
 		padding: 0 8px 0 0;
 	}
 	li a {
@@ -155,9 +168,10 @@ h1.Main-title {
 	background-color: #fff;
 	border: 1px solid #ccc;
 	p {
-		font-family: 'Oswald', sans-serif;
+		font-family: "Oswald", sans-serif;
 		font-size: 1rem;
-		font-weight:300;
+		font-weight: 300;
+		letter-spacing: 1px;
 	}
 	a {
 		@include blkblug;
@@ -172,12 +186,12 @@ h1.Main-title {
 		padding-left: 8px;
 		border-left: 3px solid #ccc;
 		margin-bottom: 10px;
-		font-family: 'Oswald', sans-serif;
+		font-family: "Oswald", sans-serif;
 		font-size: 1em;
 	}
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
 	.mainbox {
 		min-height: 260px;
 	}
@@ -192,18 +206,19 @@ h1.Main-title {
 		@include blkblug;
 	}
 	p {
-		font-family: 'Oswald', sans-serif;
-    	font-size: 1.1rem;
-    	font-weight: 300;
+		font-family: "Oswald", sans-serif;
+		font-size: 1.1rem;
+		font-weight: 300;
+		letter-spacing: 1px;
 	}
 	a {
 		@include blkblug;
 	}
 	.about-format {
-		font-family: 'Oswald', sans-serif;
-		font-size: 1.5rem
+		font-family: "Oswald", sans-serif;
+		font-size: 1.5rem;
 	}
-	.projects-code>.row {
+	.projects-code > .row {
 		margin-bottom: 20px;
 		border-bottom: 1px solid #ccc;
 		margin: 20px 10px;
@@ -222,8 +237,8 @@ h1.Main-title {
 }
 
 .project-entry {
-  padding-top:20px;
-  padding-bottom:20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 footer {
@@ -234,7 +249,7 @@ footer {
 		font-size: 24px;
 	}
 	.fa-react {
-		color: #00d8ff
+		color: #00d8ff;
 	}
 }
 
@@ -251,7 +266,7 @@ footer {
 }
 
 .fa-css3-alt {
-	color: #e34f26
+	color: #e34f26;
 }
 
 .fa-js-square {
@@ -263,7 +278,7 @@ footer {
 }
 
 .fa-database {
-	color: #44883e
+	color: #44883e;
 }
 
 .fa-apple {
@@ -275,72 +290,71 @@ footer {
 }
 
 @font-face {
-    font-family: 'Bangers';
-    src: url('./assets/fonts/Bangers-Regular.woff2') format('woff2'),
-        url('./assets/fonts/Bangers-Regular.woff') format('woff'),
-        url('./assets/fonts/Bangers-Regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Bangers";
+	src: url("./assets/fonts/Bangers-Regular.woff2") format("woff2"),
+		url("./assets/fonts/Bangers-Regular.woff") format("woff"),
+		url("./assets/fonts/Bangers-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Oswald';
-    src: url('./assets/fonts/Oswald-Light.woff2') format('woff2'),
-        url('./assets/fonts/Oswald-Light.woff') format('woff'),
-        url('./assets/fonts/Oswald-Light.svg#Oswald-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Oswald";
+	src: url("./assets/fonts/Oswald-Light.woff2") format("woff2"),
+		url("./assets/fonts/Oswald-Light.woff") format("woff"),
+		url("./assets/fonts/Oswald-Light.svg#Oswald-Light") format("svg");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Oswald';
-    src: url('./assets/fonts/Oswald-Bold.woff2') format('woff2'),
-        url('./assets/fonts/Oswald-Bold.woff') format('woff'),
-        url('./assets/fonts/Oswald-Bold.svg#Oswald-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Oswald";
+	src: url("./assets/fonts/Oswald-Bold.woff2") format("woff2"),
+		url("./assets/fonts/Oswald-Bold.woff") format("woff"),
+		url("./assets/fonts/Oswald-Bold.svg#Oswald-Bold") format("svg");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Oswald';
-    src: url('./assets/fonts/Oswald-Regular.woff2') format('woff2'),
-        url('./assets/fonts/Oswald-Regular.woff') format('woff'),
-        url('./assets/fonts/Oswald-Regular.svg#Oswald-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Oswald";
+	src: url("./assets/fonts/Oswald-Regular.woff2") format("woff2"),
+		url("./assets/fonts/Oswald-Regular.woff") format("woff"),
+		url("./assets/fonts/Oswald-Regular.svg#Oswald-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('./assets/fonts/OpenSans-Italic.woff2') format('woff2'),
-        url('./assets/fonts/OpenSans-Italic.woff') format('woff'),
-        url('./assets/fonts/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+	font-family: "Open Sans";
+	src: url("./assets/fonts/OpenSans-Italic.woff2") format("woff2"),
+		url("./assets/fonts/OpenSans-Italic.woff") format("woff"),
+		url("./assets/fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('./assets/fonts/OpenSans.woff2') format('woff2'),
-        url('./assets/fonts/OpenSans.woff') format('woff'),
-        url('./assets/fonts/OpenSans.svg#OpenSans') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Open Sans";
+	src: url("./assets/fonts/OpenSans.woff2") format("woff2"),
+		url("./assets/fonts/OpenSans.woff") format("woff"),
+		url("./assets/fonts/OpenSans.svg#OpenSans") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('./assets/fonts/OpenSans-Light.woff2') format('woff2'),
-        url('./assets/fonts/OpenSans-Light.woff') format('woff'),
-        url('./assets/fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Open Sans";
+	src: url("./assets/fonts/OpenSans-Light.woff2") format("woff2"),
+		url("./assets/fonts/OpenSans-Light.woff") format("woff"),
+		url("./assets/fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
-
