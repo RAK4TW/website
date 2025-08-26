@@ -57,5 +57,9 @@
 		"globals": "^15.11.0"
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"overrides": {
+		"node-fetch": "^3.3.2",
+		"nth-check": "2.1.1"
+	}
 }
