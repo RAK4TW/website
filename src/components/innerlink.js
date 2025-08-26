@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Navlink({ myinfo, title, currentClass }) {
 	function showDetailBox(key, mainboxes) {
 		setTimeout(function () {

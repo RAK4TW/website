@@ -1,8 +1,11 @@
-import React from "react";
 import { Animated } from "react-animated-css";
 import Mainbox from "./mainbox.js";
 
 export default function Mainboxes(props) {
+	const half = Math.ceil(props.stateinfo.length / 2);
+	const firstHalf = props.stateinfo.slice(0, half);
+	const secondHalf = props.stateinfo.slice(half);
+
 	return (
 		<Animated
 			animationIn="fadeIn"
@@ -12,12 +15,14 @@ export default function Mainboxes(props) {
 		>
 			<div className="row mobilecrop">
 				<div className="col-md-6">
-					<Mainbox router={props} myinfo={props.stateinfo.about} />
-					<Mainbox router={props} myinfo={props.stateinfo.projects} />
+					{firstHalf.map((item, index) => (
+						<Mainbox key={index} myinfo={item} history={props.history} />
+					))}
 				</div>
 				<div className="col-md-6">
-					<Mainbox router={props} myinfo={props.stateinfo.contact} />
-					<Mainbox router={props} myinfo={props.stateinfo.ideas} />
+					{secondHalf.map((item, index) => (
+						<Mainbox key={index} myinfo={item} history={props.history} />
+					))}
 				</div>
 			</div>
 		</Animated>
