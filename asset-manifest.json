@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.40499b5d.css",
-    "main.js": "/static/js/main.997be649.js",
-    "static/media/OpenSans-Italic.svg": "/static/media/OpenSans-Italic.1a20a442c05086d970d3.svg",
-    "static/media/OpenSans.svg": "/static/media/OpenSans.93bb5847f151e005c475.svg",
-    "static/media/OpenSans-Light.svg": "/static/media/OpenSans-Light.5abaaa944bb783f8b7c0.svg",
-    "static/media/Bangers-Regular.svg": "/static/media/Bangers-Regular.7f29bc04aba0d8fbeaec.svg",
+    "main.css": "/static/css/main.66fe6b54.css",
+    "main.js": "/static/js/main.6c4d223e.js",
+    "static/media/OpenSans-Italic.svg": "/static/media/OpenSans-Italic.7e2e8399340d8597a30c.svg",
+    "static/media/OpenSans.svg": "/static/media/OpenSans.c28621136992a49238a4.svg",
+    "static/media/OpenSans-Light.svg": "/static/media/OpenSans-Light.ef28be832a4e7ca8f1f5.svg",
+    "static/media/Bangers-Regular.svg": "/static/media/Bangers-Regular.5c6b89e8a2b067c512f5.svg",
     "static/media/intact-pic.jpg": "/static/media/intact-pic.3b92c9a597470e9a384b.jpg",
     "static/media/mardo.jpg": "/static/media/mardo.01a95e9a9533d3261b38.jpg",
     "static/media/agility.jpg": "/static/media/agility.0c882df178ba300c638a.jpg",
-    "static/media/Oswald-Regular.svg": "/static/media/Oswald-Regular.712691a222dbdc46ff37.svg",
+    "static/media/Oswald-Regular.svg": "/static/media/Oswald-Regular.975d072b22850505b797.svg",
     "static/media/sda.jpg": "/static/media/sda.8b014a170cd9e5199207.jpg",
-    "static/media/Oswald-Light.svg": "/static/media/Oswald-Light.8a69d5346da5f520269c.svg",
+    "static/media/Oswald-Light.svg": "/static/media/Oswald-Light.3461037e4cb000ea4eae.svg",
     "static/media/vmt.jpg": "/static/media/vmt.1c15f6ce73cc86d736b7.jpg",
-    "static/media/Oswald-Bold.svg": "/static/media/Oswald-Bold.87f8e6ccd1538070e3f4.svg",
+    "static/media/Oswald-Bold.svg": "/static/media/Oswald-Bold.94e7fd0fd3da51d3b0a6.svg",
     "static/media/bgi.jpg": "/static/media/bgi.e82946932a70e1fb94b6.jpg",
     "static/media/bgridopacity.png": "/static/media/bgridopacity.be08e15ca1e55df6a75f.png",
     "static/media/jlrfd.jpg": "/static/media/jlrfd.aa01936d29e91a2fdd44.jpg",
@@ -39,11 +39,11 @@
     "static/media/ryan.jpg": "/static/media/ryan.ad4004739c63bcc8bb92.jpg",
     "static/media/Bangers-Regular.woff2": "/static/media/Bangers-Regular.a8da759f9f292a8c563c.woff2",
     "index.html": "/index.html",
-    "main.40499b5d.css.map": "/static/css/main.40499b5d.css.map",
-    "main.997be649.js.map": "/static/js/main.997be649.js.map"
+    "main.66fe6b54.css.map": "/static/css/main.66fe6b54.css.map",
+    "main.6c4d223e.js.map": "/static/js/main.6c4d223e.js.map"
   },
   "entrypoints": [
-    "static/css/main.40499b5d.css",
-    "static/js/main.997be649.js"
+    "static/css/main.66fe6b54.css",
+    "static/js/main.6c4d223e.js"
   ]
 }
