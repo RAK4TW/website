@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
 	BrowserRouter as Router,
 	Route,
@@ -15,11 +15,13 @@ import Mainboxes from "./components/combined-mainboxes.js";
 import "./style.scss";
 
 export default function Main() {
+	const [redirectPath, setRedirectPath] = useState(null);
+
 	useEffect(() => {
-		const redirectPath = sessionStorage.getItem('redirect');
-		if (redirectPath) {
+		const savedRedirect = sessionStorage.getItem('redirect');
+		if (savedRedirect) {
 			sessionStorage.removeItem('redirect');
-			window.history.replaceState(null, null, redirectPath);
+			setRedirectPath(savedRedirect);
 		}
 	}, []);
 
@@ -104,6 +106,7 @@ export default function Main() {
 									/>
 									<Route exact path="/contact" component={DetailboxContact} />
 									<Route exact path="/ideas" component={DetailboxIdeas} />
+									{redirectPath && <Redirect from="/" to={redirectPath} />}
 									<Route path="*">
 										<Redirect to="/" />
 									</Route>
