@@ -21,6 +21,14 @@ export default function DetailboxContact({ history }) {
 						<div
 							className="col-3 closex text-right"
 							onClick={handleClose}
+							role="button"
+							tabIndex={0}
+							onKeyDown={(e) => {
+								if (e.key === 'Enter' || e.key === ' ') {
+									handleClose();
+								}
+							}}
+							aria-label="Close contact view"
 						>
 							Close [X]
 						</div>
@@ -33,7 +41,8 @@ export default function DetailboxContact({ history }) {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="http://www.instagram.com/rak4tw"
+								href="https://www.instagram.com/rak4tw"
+								aria-label="Visit Ryan's Instagram profile"
 							>
 								@RAK4TW
 							</a>{" "}

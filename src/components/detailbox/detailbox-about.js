@@ -21,6 +21,14 @@ export default function DetailboxAbout({ history }) {
 							onClick={() => {
 								history.replace("/");
 							}}
+							role="button"
+							tabIndex={0}
+							onKeyDown={(e) => {
+								if (e.key === 'Enter' || e.key === ' ') {
+									history.replace("/");
+								}
+							}}
+							aria-label="Close about view"
 						>
 							Close [X]
 						</div>
@@ -43,16 +51,18 @@ export default function DetailboxAbout({ history }) {
 									else!
 								</p>
 								<p>
-									<a download="download" href={resume} rel="noreferrer">
+									<a download="download" href={resume} rel="noreferrer" aria-label="Download Ryan Koskela's resume">
 										Download Resume
 									</a>
 								</p>
 							</div>
-							<div class="col-md-5">
+							<div className="col-md-5">
 								<img
-									alt="Me"
+									alt="Ryan Koskela - Web Developer"
 									className="img-fluid rounded float-md-right"
 									src={ryimage}
+									loading="lazy"
+									style={{ maxWidth: "250px" }}
 								/>
 							</div>
 						</div>{" "}

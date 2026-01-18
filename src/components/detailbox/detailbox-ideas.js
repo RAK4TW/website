@@ -19,6 +19,14 @@ export default function DetailboxIdeas({ history }) {
 							onClick={() => {
 								history.replace("/");
 							}}
+							role="button"
+							tabIndex={0}
+							onKeyDown={(e) => {
+								if (e.key === 'Enter' || e.key === ' ') {
+									history.replace("/");
+								}
+							}}
+							aria-label="Close ideas view"
 						>
 							Close [X]
 						</div>

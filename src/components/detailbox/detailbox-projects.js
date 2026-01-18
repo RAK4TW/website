@@ -1,16 +1,18 @@
 import { Animated } from "react-animated-css";
 import agility from "../../assets/agility.jpg";
 import bgi from "../../assets/bgi.jpg";
-import mardo from "../../assets/mardo.jpg";
+import byte from "../../assets/byte_thumb.jpg";
+import intactpic from "../../assets/intact-pic.jpg";
 import jlrfd from "../../assets/jlrfd.jpg";
-import vmt from "../../assets/vmt.jpg";
+import mardo from "../../assets/mardo.jpg";
 import mdc1 from "../../assets/mdc1.jpg";
 import mdc2 from "../../assets/mdc2.jpg";
 import mdc3 from "../../assets/mdc3.jpg";
 import mdc4 from "../../assets/mdc4.jpg";
 import sda from "../../assets/sda.jpg";
-import byte from "../../assets/byte_thumb.jpg";
-import intactpic from "../../assets/intact-pic.jpg";
+import suresmile from "../../assets/suresmile.jpg";
+import surity from "../../assets/surity.jpg";
+import vmt from "../../assets/vmt.jpg";
 
 export default function DetailboxProjects({ history }) {
 	return (
@@ -31,13 +33,57 @@ export default function DetailboxProjects({ history }) {
 							onClick={() => {
 								history.replace("/");
 							}}
+							role="button"
+							tabIndex={0}
+							onKeyDown={(e) => {
+								if (e.key === 'Enter' || e.key === ' ') {
+									history.replace("/");
+								}
+							}}
+							aria-label="Close projects view"
 						>
 							Close [X]
 						</div>
 					</div>
 					<div className="row">
 						<div className="col-md-12">
-							<p>A selection of past projects I've taken charge of.</p>
+							<p>A selection of my past projects.</p>
+						</div>
+					</div>
+
+					<div className="row project-entry">
+						<div className="col-md-8">
+							<h2 className="about-format">Surity</h2>
+							<p>
+								Surity is a medical device solutions company, with a site built with Shopify/Hydrogen. This site mostly uses Shopify as a headless CMS, with custom components built in Hydrogen.
+							</p>
+						</div>
+						<div className="col-md-4 text-center">
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://www.surity.care"
+							>
+								<img alt="Surity medical device solutions website" className="img-fluid" src={surity} loading="lazy" />
+							</a>
+						</div>
+					</div>
+
+					<div className="row project-entry">
+						<div className="col-md-8">
+							<h2 className="about-format">SureSmile</h2>
+							<p>
+								SureSmile was built from the ground up with Next.js/React, TypeScript. This particular website has a modern medical design, and is tailored to both patients and doctors. Also included are a case library and pages documenting processes.
+							</p>
+						</div>
+						<div className="col-md-4 text-center">
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://www.suresmile.com"
+							>
+								<img alt="SureSmile orthodontic website" className="img-fluid" src={suresmile} loading="lazy" />
+							</a>
 						</div>
 					</div>
 
@@ -54,9 +100,9 @@ export default function DetailboxProjects({ history }) {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="http://www.byteme.com"
+								href="https://web.archive.org/web/20241007185421/https://www.byte.com/"
 							>
-								<img alt="Byte" className="img-fluid" src={byte} />
+								<img alt="Byte clear aligners website" className="img-fluid" src={byte} loading="lazy" />
 							</a>
 						</div>
 					</div>
@@ -69,8 +115,8 @@ export default function DetailboxProjects({ history }) {
 								customization. WooCommerce integration also customized.
 							</p>
 						</div>
-						<div className="col-md-4">
-							<img alt="Agility" className="img-fluid" src={agility} />
+						<div className="col-md-4 text-center">
+							<img alt="Agility Fuel Solutions website" className="img-fluid" src={agility} loading="lazy" />
 						</div>
 					</div>
 					<div className="row project-entry">
@@ -85,9 +131,9 @@ export default function DetailboxProjects({ history }) {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="http://www.businessgrowthinnovators.com"
+								href="https://www.businessgrowthinnovators.com"
 							>
-								<img alt="BGI" className="img-fluid" src={bgi} />
+								<img alt="Business Growth Innovators website" className="img-fluid" src={bgi} loading="lazy" />
 							</a>
 						</div>
 					</div>
@@ -102,7 +148,7 @@ export default function DetailboxProjects({ history }) {
 								rel="noopener noreferrer"
 								href="http://web.archive.org/web/20170723072442/http://www.sdapartnershipusa.com/sda-design.html"
 							>
-								<img alt="SDA" className="img-fluid" src={sda} />
+								<img alt="SDA Partnership USA architecture website" className="img-fluid" src={sda} loading="lazy" />
 							</a>
 						</div>
 					</div>
@@ -120,7 +166,7 @@ export default function DetailboxProjects({ history }) {
 								rel="noopener noreferrer"
 								href="https://rak4tw.github.io/INTACT/"
 							>
-								<img alt="INTACT" className="img-fluid" src={intactpic} />
+								<img alt="INTACT AMP website demo" className="img-fluid" src={intactpic} loading="lazy" />
 							</a>
 						</div>
 					</div>
@@ -140,7 +186,7 @@ export default function DetailboxProjects({ history }) {
 								rel="noopener noreferrer"
 								href="https://web.archive.org/web/20160430191043/http://jewelrybymardo.com/"
 							>
-								<img alt="Jewelry By Mardo" className="img-fluid" src={mardo} />
+								<img alt="Jewelry By Mardo e-commerce website" className="img-fluid" src={mardo} loading="lazy" />
 							</a>
 						</div>
 					</div>
@@ -158,12 +204,13 @@ export default function DetailboxProjects({ history }) {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="http://www.jaguarlandroverfacilitydesign.com/"
+								href="https://www.jaguarlandroverfacilitydesign.com/"
 							>
 								<img
-									alt="Jaguar Land Rover"
+									alt="Jaguar Land Rover Facility Design website"
 									className="img-fluid"
 									src={jlrfd}
+									loading="lazy"
 								/>
 							</a>
 						</div>
@@ -180,12 +227,13 @@ export default function DetailboxProjects({ history }) {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="http://www.vm-tech.com"
+								href="https://www.vm-tech.com"
 							>
 								<img
-									alt="VMT Computer Services"
+									alt="VM-Tech computer services website"
 									className="img-fluid"
 									src={vmt}
+									loading="lazy"
 								/>
 							</a>
 						</div>
@@ -204,44 +252,44 @@ export default function DetailboxProjects({ history }) {
 								<div className="col-md-6">
 									<a target="_blank" rel="noopener noreferrer" href={mdc1}>
 										<img
-											alt="Responsive Mobile Design"
+											alt="Responsive Mobile Design concept 1"
 											className="img-fluid"
 											src={mdc1}
+											loading="lazy"
 										/>
 									</a>
-									<br></br>
 								</div>
 								<div className="col-md-6">
 									<a target="_blank" rel="noopener noreferrer" href={mdc2}>
 										<img
-											alt="Responsive Mobile Design"
+											alt="Responsive Mobile Design concept 2"
 											className="img-fluid"
 											src={mdc2}
+											loading="lazy"
 										/>
 									</a>
-									<br></br>
 								</div>
 							</div>
 							<div className="row">
 								<div className="col-md-6">
 									<a target="_blank" rel="noopener noreferrer" href={mdc3}>
 										<img
-											alt="Responsive Mobile Design"
+											alt="Responsive Mobile Design concept 3"
 											className="img-fluid"
 											src={mdc3}
+											loading="lazy"
 										/>
 									</a>
-									<br></br>
 								</div>
 								<div className="col-md-6">
 									<a target="_blank" rel="noopener noreferrer" href={mdc4}>
 										<img
-											alt="Responsive Mobile Design"
+											alt="Responsive Mobile Design concept 4"
 											className="img-fluid"
 											src={mdc4}
+											loading="lazy"
 										/>
 									</a>
-									<br></br>
 								</div>
 							</div>
 						</div>
