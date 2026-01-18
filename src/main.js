@@ -42,7 +42,7 @@ export default function Main() {
 	];
 
 	return (
-		<Router basename={`/${process.env.PUBLIC_URL}`}>
+		<Router>
 			<div>
 				<header className="Main-header">
 					<div className="container">
