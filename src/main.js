@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import {
 	BrowserRouter as Router,
 	Route,
@@ -14,6 +15,14 @@ import Mainboxes from "./components/combined-mainboxes.js";
 import "./style.scss";
 
 export default function Main() {
+	useEffect(() => {
+		const redirectPath = sessionStorage.getItem('redirect');
+		if (redirectPath) {
+			sessionStorage.removeItem('redirect');
+			window.history.replaceState(null, null, redirectPath);
+		}
+	}, []);
+
 	const mainboxItems = [
 		{
 			tagline: "A few of my interests, a few biographical details, and more",
