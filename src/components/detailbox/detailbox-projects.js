@@ -227,7 +227,7 @@ export default function DetailboxProjects({ history }) {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="https://www.vm-tech.com"
+								href="https://web.archive.org/web/20160726015500/https://vm-tech.com/"
 							>
 								<img
 									alt="VM-Tech computer services website"
