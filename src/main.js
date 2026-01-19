@@ -19,8 +19,10 @@ export default function Main() {
 
 	useEffect(() => {
 		const savedRedirect = sessionStorage.getItem('redirect');
+		console.log('Main useEffect: savedRedirect =', savedRedirect);
 		if (savedRedirect) {
 			sessionStorage.removeItem('redirect');
+			console.log('Main useEffect: setting redirect to', savedRedirect);
 			setRedirectPath(savedRedirect);
 		}
 	}, []);
@@ -91,6 +93,7 @@ export default function Main() {
 						<div className="row">
 							<div className="col-md-12">
 								<Switch>
+									{redirectPath && <Redirect from="/" to={redirectPath} />}
 									<Route
 										exact
 										path="/"
@@ -106,7 +109,6 @@ export default function Main() {
 									/>
 									<Route exact path="/contact" component={DetailboxContact} />
 									<Route exact path="/ideas" component={DetailboxIdeas} />
-									{redirectPath && <Redirect from="/" to={redirectPath} />}
 									<Route path="*">
 										<Redirect to="/" />
 									</Route>
