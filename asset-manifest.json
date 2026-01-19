@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.66fe6b54.css",
-    "main.js": "/static/js/main.fa8088ee.js",
+    "main.js": "/static/js/main.ae969d61.js",
     "static/media/OpenSans-Italic.svg": "/static/media/OpenSans-Italic.7e2e8399340d8597a30c.svg",
     "static/media/OpenSans.svg": "/static/media/OpenSans.c28621136992a49238a4.svg",
     "static/media/OpenSans-Light.svg": "/static/media/OpenSans-Light.ef28be832a4e7ca8f1f5.svg",
@@ -42,10 +42,10 @@
     "static/media/Bangers-Regular.woff2": "/static/media/Bangers-Regular.a8da759f9f292a8c563c.woff2",
     "index.html": "/index.html",
     "main.66fe6b54.css.map": "/static/css/main.66fe6b54.css.map",
-    "main.fa8088ee.js.map": "/static/js/main.fa8088ee.js.map"
+    "main.ae969d61.js.map": "/static/js/main.ae969d61.js.map"
   },
   "entrypoints": [
     "static/css/main.66fe6b54.css",
-    "static/js/main.fa8088ee.js"
+    "static/js/main.ae969d61.js"
   ]
 }
