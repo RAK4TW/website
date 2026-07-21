@@ -1,14 +1,23 @@
 import { Animated } from "react-animated-css";
+import { useEffect } from 'react';
 
 export default function DetailboxContact({ history }) {
 	const handleClose = () => {
+		// Clear title and session storage on exit
+		document.title = "Ryan Koskela - Web developer, writer, sports and food/drink aficionado, and so much more";
+		sessionStorage.removeItem('pageTitle');
 		history.replace("/");
 	};
 
+	useEffect(() => {
+		document.title = "Ryan Koskela - Contact";
+		sessionStorage.setItem('pageTitle', 'Contact');
+	}, [history]);
+
 	return (
 		<Animated
-			animationIn="fadeInRight"
-			animationOut="fadeOutDown"
+			animationIn="slideInRight"
+			animationOut="slideOutRight"
 			isVisible={true}
 			animationInDuration="500"
 		>

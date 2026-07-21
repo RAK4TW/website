@@ -19,10 +19,12 @@ export default function Main() {
 
 	useEffect(() => {
 		const savedRedirect = sessionStorage.getItem('redirect');
-		console.log('Main useEffect: savedRedirect =', savedRedirect);
+
+		document.title = "Ryan Koskela - Web developer, writer, sports and food/drink aficionado, and so much more";
+		sessionStorage.removeItem('pageTitle');
+
 		if (savedRedirect) {
 			sessionStorage.removeItem('redirect');
-			console.log('Main useEffect: setting redirect to', savedRedirect);
 			setRedirectPath(savedRedirect);
 		}
 	}, []);
@@ -62,7 +64,11 @@ export default function Main() {
 						<div className="row">
 							<div className="col-md-6">
 								<h1 className="Main-title">
-									<Link to="/">Ryan Koskela</Link>
+									<Link to="/" onClick={() => {
+										document.title = "Ryan Koskela - Web developer, writer, sports and food/drink aficionado, and so much more";
+										sessionStorage.removeItem('pageTitle');
+										window.history.pushState(null, '', '/');
+									}}>Ryan Koskela</Link>
 								</h1>
 								<p className="title-subheading">
 									Web developer, writer, sports and food/drink aficionado, and so

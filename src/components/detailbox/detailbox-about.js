@@ -1,12 +1,26 @@
 import { Animated } from "react-animated-css";
-import ryimage from "../../assets/ryan.jpg";
+import { useEffect } from 'react';
+import ryimage from "../../assets/me.webp";
 import resume from "../../assets/Koskela_Ryan_Resume.pdf";
 
 export default function DetailboxAbout({ history }) {
+
+	const handleClose = () => {
+		// Clear title and session storage on exit
+		document.title = "Ryan Koskela - Web developer, writer, sports and food/drink aficionado, and so much more";
+		sessionStorage.removeItem('pageTitle');
+		history.replace("/");
+	};
+
+	useEffect(() => {
+		document.title = "Ryan Koskela - About";
+		sessionStorage.setItem('pageTitle', 'About');
+	}, [history]);
+
 	return (
 		<Animated
-			animationIn="fadeInRight"
-			animationOut="fadeOutDown"
+			animationIn="slideInRight"
+			animationOut="slideOutRight"
 			isVisible={true}
 			animationInDuration="500"
 		>
@@ -18,14 +32,12 @@ export default function DetailboxAbout({ history }) {
 						</div>
 						<div
 							className="col-3 closex text-right"
-							onClick={() => {
-								history.replace("/");
-							}}
+							onClick={handleClose}
 							role="button"
 							tabIndex={0}
 							onKeyDown={(e) => {
 								if (e.key === 'Enter' || e.key === ' ') {
-									history.replace("/");
+									handleClose();
 								}
 							}}
 							aria-label="Close about view"

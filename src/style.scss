@@ -9,55 +9,58 @@ body * {
 
 @mixin blkblbkg {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0015ff+0,0a0a0a+100&0.23+0,0.52+100 */
-	background: -moz-linear-gradient(
-		top,
-		rgba(0, 21, 255, 0.23) 0%,
-		rgba(10, 10, 10, 0.52) 100%
-	);
+	background: -moz-linear-gradient(top,
+			rgba(0, 21, 255, 0.23) 0%,
+			rgba(10, 10, 10, 0.52) 100%);
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		top,
-		rgba(0, 21, 255, 0.23) 0%,
-		rgba(10, 10, 10, 0.52) 100%
-	);
+	background: -webkit-linear-gradient(top,
+			rgba(0, 21, 255, 0.23) 0%,
+			rgba(10, 10, 10, 0.52) 100%);
 	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to bottom,
-		rgba(0, 21, 255, 0.23) 0%,
-		rgba(10, 10, 10, 0.52) 100%
-	);
+	background: linear-gradient(to bottom,
+			rgba(0, 21, 255, 0.23) 0%,
+			rgba(10, 10, 10, 0.52) 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b0015ff', endColorstr='#850a0a0a', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b0015ff', endColorstr='#850a0a0a', GradientType=0);
 	/* IE6-9 */
 }
 
 @-webkit-keyframes zoombg {
 	0% {
-		opacity: 0.1;
+		opacity: 0;
 		background-size: 100%;
 	}
+
 	50% {
 		opacity: 1;
-		background-size: 130%;
-	}
-	100% {
-		opacity: 0.1;
 		background-size: 160%;
+	}
+
+	100% {
+		opacity: 0;
+		background-size: 100%;
 	}
 }
 
 @keyframes zoombg {
 	0% {
-		opacity: 0.1;
+		opacity: 0;
 		background-size: 100%;
 	}
+
 	50% {
 		opacity: 1;
-		background-size: 130%;
-	}
-	100% {
-		opacity: 0.1;
 		background-size: 160%;
+	}
+
+	75% {
+		opacity: 1;
+		background-size: 120%;
+	}
+
+	100% {
+		opacity: 0;
+		background-size: 80%;
 	}
 }
 
@@ -65,10 +68,12 @@ body * {
 	.mainbox {
 		min-height: 250px;
 	}
+
 	.mobilecrop {
 		margin-left: 8px;
 		margin-right: 8px;
 	}
+
 	.mobilecrop .projects {
 		margin-bottom: 0;
 	}
@@ -84,7 +89,7 @@ body * {
 
 .Main::after {
 	content: "";
-	background-image: url("./assets/bgridopacity.png");
+	background-image: url("./assets/bgmesh.svg");
 	background-position: center center;
 	top: 0;
 	left: 0;
@@ -96,8 +101,8 @@ body * {
 
 @media screen and (min-width: 1024px) {
 	.Main::after {
-		animation: zoombg 16s linear infinite;
-		-webkit-animation: zoombg 16s linear infinite;
+		animation: zoombg 32s linear infinite;
+		-webkit-animation: zoombg 32s linear infinite;
 	}
 }
 
@@ -112,6 +117,7 @@ h1.Main-title {
 	cursor: pointer;
 	font-size: 1.8rem;
 	text-decoration: none;
+
 	a {
 		@include blkblug;
 		text-decoration: none;
@@ -136,11 +142,13 @@ h1.Main-title {
 	text-align: right;
 	@include blkblug;
 	padding: 0;
+
 	li {
 		display: inline-block;
 		font-family: "Bangers", cursive;
 		padding: 0 8px 0 0;
 	}
+
 	li a {
 		text-decoration: none;
 		display: block;
@@ -150,6 +158,7 @@ h1.Main-title {
 		font-size: 1.2rem;
 		@include blkblug;
 	}
+
 	li a:hover {
 		border-bottom: 5px solid #000000;
 		cursor: pointer;
@@ -167,19 +176,23 @@ h1.Main-title {
 	cursor: pointer;
 	background-color: #fff;
 	border: 1px solid #ccc;
+
 	p {
 		font-family: "Oswald", sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: 1px;
 	}
+
 	a {
 		@include blkblug;
 	}
+
 	.infoList {
 		padding: 10px;
 		margin: 10px;
 	}
+
 	.infoList li {
 		font-size: 1.4em;
 		list-style: none;
@@ -202,34 +215,42 @@ h1.Main-title {
 	background-color: #fff;
 	border: 1px solid #ccc;
 	padding: 20px;
+
 	h1 {
 		@include blkblug;
 	}
+
 	p {
 		font-family: "Oswald", sans-serif;
 		font-size: 1.1rem;
 		font-weight: 300;
 		letter-spacing: 1px;
 	}
+
 	a {
 		@include blkblug;
 	}
+
 	.about-format {
 		font-family: "Oswald", sans-serif;
 		font-size: 1.5rem;
 	}
-	.projects-code > .row {
+
+	.projects-code>.row {
 		margin-bottom: 20px;
 		border-bottom: 1px solid #ccc;
 		margin: 20px 10px;
 		padding-bottom: 20px;
 	}
+
 	.projects-code p {
 		font-size: 24px;
 	}
+
 	.projects-code img {
 		border: 1px solid #ccc;
 	}
+
 	.projects-code a {
 		display: block;
 		cursor: pointer;
@@ -244,10 +265,12 @@ h1.Main-title {
 footer {
 	border-top: 5px solid #ccc;
 	padding: 20px 0;
+
 	i {
 		margin: 0 4px;
 		font-size: 24px;
 	}
+
 	.fa-react {
 		color: #00d8ff;
 	}

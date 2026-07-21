@@ -1,4 +1,5 @@
 import { Animated } from "react-animated-css";
+import { useEffect } from 'react';
 import agility from "../../assets/agility.jpg";
 import bgi from "../../assets/bgi.jpg";
 import byte from "../../assets/byte_thumb.jpg";
@@ -15,10 +16,23 @@ import surity from "../../assets/surity.jpg";
 import vmt from "../../assets/vmt.jpg";
 
 export default function DetailboxProjects({ history }) {
+
+	const handleClose = () => {
+		// Clear title and session storage on exit
+		document.title = "Ryan Koskela - Web developer, writer, sports and food/drink aficionado, and so much more";
+		sessionStorage.removeItem('pageTitle');
+		history.replace("/");
+	};
+
+	useEffect(() => {
+		document.title = "Ryan Koskela - Projects";
+		sessionStorage.setItem('pageTitle', 'Projects');
+	}, [history]);
+
 	return (
 		<Animated
-			animationIn="fadeInRight"
-			animationOut="fadeOutDown"
+			animationIn="slideInRight"
+			animationOut="slideOutRight"
 			isVisible={true}
 			animationInDuration="500"
 		>
@@ -30,14 +44,12 @@ export default function DetailboxProjects({ history }) {
 						</div>
 						<div
 							className="col-3 closex text-right"
-							onClick={() => {
-								history.replace("/");
-							}}
+							onClick={handleClose}
 							role="button"
 							tabIndex={0}
 							onKeyDown={(e) => {
 								if (e.key === 'Enter' || e.key === ' ') {
-									history.replace("/");
+									handleClose();
 								}
 							}}
 							aria-label="Close projects view"
