@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f7f1669e.css",
-    "main.js": "/static/js/main.8a0b0285.js",
-    "static/media/me.webp": "/static/media/me.349874de3d1244f306f8.webp",
+    "main.js": "/static/js/main.897cc435.js",
+    "static/media/me.webp": "/static/media/me.fb446ba97b459fd54bce.webp",
     "static/media/OpenSans-Italic.svg": "/static/media/OpenSans-Italic.1a20a442c05086d970d3.svg",
     "static/media/OpenSans.svg": "/static/media/OpenSans.93bb5847f151e005c475.svg",
     "static/media/OpenSans-Light.svg": "/static/media/OpenSans-Light.5abaaa944bb783f8b7c0.svg",
@@ -17,7 +17,6 @@
     "static/media/Oswald-Bold.svg": "/static/media/Oswald-Bold.87f8e6ccd1538070e3f4.svg",
     "static/media/bgi.jpg": "/static/media/bgi.e82946932a70e1fb94b6.jpg",
     "static/media/jlrfd.jpg": "/static/media/jlrfd.aa01936d29e91a2fdd44.jpg",
-    "static/media/Koskela_Ryan_Resume.pdf": "/static/media/Koskela_Ryan_Resume.44146289e68ea013bcf6.pdf",
     "static/media/OpenSans-Light.woff": "/static/media/OpenSans-Light.f94d80f675c9d1ab5482.woff",
     "static/media/mdc4.jpg": "/static/media/mdc4.d31ee3f1896553586d3f.jpg",
     "static/media/OpenSans.woff": "/static/media/OpenSans.3b1c4c54a67fe6b49d4d.woff",
@@ -42,10 +41,10 @@
     "static/media/bgmesh.svg": "/static/media/bgmesh.34c9d3d07bc6bb129ce4.svg",
     "index.html": "/index.html",
     "main.f7f1669e.css.map": "/static/css/main.f7f1669e.css.map",
-    "main.8a0b0285.js.map": "/static/js/main.8a0b0285.js.map"
+    "main.897cc435.js.map": "/static/js/main.897cc435.js.map"
   },
   "entrypoints": [
     "static/css/main.f7f1669e.css",
-    "static/js/main.8a0b0285.js"
+    "static/js/main.897cc435.js"
   ]
 }

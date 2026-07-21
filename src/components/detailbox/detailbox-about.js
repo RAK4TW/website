@@ -1,7 +1,6 @@
 import { Animated } from "react-animated-css";
 import { useEffect } from 'react';
 import ryimage from "../../assets/me.webp";
-import resume from "../../assets/Koskela_Ryan_Resume.pdf";
 
 export default function DetailboxAbout({ history }) {
 
@@ -63,8 +62,8 @@ export default function DetailboxAbout({ history }) {
 									else!
 								</p>
 								<p>
-									<a download="download" href={resume} rel="noreferrer" aria-label="Download Ryan Koskela's resume">
-										Download Resume
+									<a target="_blank" href="https://docs.google.com/document/d/1PjxA74T9jaK7tIfxfmi4hSi1nuNQwe_Jl2MwaLIK2SQ/edit?usp=sharing" rel="noreferrer" aria-label="View Ryan Koskela's resume">
+										View Resume
 									</a>
 								</p>
 							</div>
