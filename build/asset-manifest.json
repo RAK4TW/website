@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.f7f1669e.css",
-    "main.js": "/static/js/main.897cc435.js",
+    "main.css": "/static/css/main.08626a0e.css",
+    "main.js": "/static/js/main.da26295c.js",
     "static/media/me.webp": "/static/media/me.fb446ba97b459fd54bce.webp",
     "static/media/OpenSans-Italic.svg": "/static/media/OpenSans-Italic.1a20a442c05086d970d3.svg",
     "static/media/OpenSans.svg": "/static/media/OpenSans.93bb5847f151e005c475.svg",
     "static/media/OpenSans-Light.svg": "/static/media/OpenSans-Light.5abaaa944bb783f8b7c0.svg",
+    "static/media/masonry.png": "/static/media/masonry.d0e3068b2787139a8087.png",
     "static/media/Bangers-Regular.svg": "/static/media/Bangers-Regular.7f29bc04aba0d8fbeaec.svg",
     "static/media/intact-pic.jpg": "/static/media/intact-pic.3b92c9a597470e9a384b.jpg",
     "static/media/mardo.jpg": "/static/media/mardo.01a95e9a9533d3261b38.jpg",
@@ -22,12 +23,14 @@
     "static/media/OpenSans.woff": "/static/media/OpenSans.3b1c4c54a67fe6b49d4d.woff",
     "static/media/OpenSans-Italic.woff": "/static/media/OpenSans-Italic.0d54e8db7c27c8fb156f.woff",
     "static/media/byte_thumb.jpg": "/static/media/byte_thumb.888b997ca6cb95dd96e0.jpg",
+    "static/media/cards.png": "/static/media/cards.ab4fa11c11a922234787.png",
     "static/media/mdc3.jpg": "/static/media/mdc3.7ff4d5ad3a1d9e09dcc1.jpg",
     "static/media/OpenSans-Light.woff2": "/static/media/OpenSans-Light.0beee21576bd417ae2bd.woff2",
     "static/media/mdc2.jpg": "/static/media/mdc2.f81b1292da94169592df.jpg",
     "static/media/mdc1.jpg": "/static/media/mdc1.068d07810085df915136.jpg",
     "static/media/OpenSans.woff2": "/static/media/OpenSans.35d382043958f753f2c4.woff2",
     "static/media/OpenSans-Italic.woff2": "/static/media/OpenSans-Italic.ad6cdc1815932cee1935.woff2",
+    "static/media/quotes.png": "/static/media/quotes.5dfd2dcd657be4328c4e.png",
     "static/media/suresmile.jpg": "/static/media/suresmile.378c149aadb0bc47b014.jpg",
     "static/media/surity.jpg": "/static/media/surity.c5a7b9ac2ff4ba4b5939.jpg",
     "static/media/Oswald-Bold.woff": "/static/media/Oswald-Bold.8ed7291ce7a25dd88535.woff",
@@ -36,15 +39,17 @@
     "static/media/Oswald-Bold.woff2": "/static/media/Oswald-Bold.71ba0d853320d484def3.woff2",
     "static/media/Oswald-Regular.woff2": "/static/media/Oswald-Regular.dd8700c3c527961bbd68.woff2",
     "static/media/Bangers-Regular.woff": "/static/media/Bangers-Regular.d5af29fbc7d08b7e449e.woff",
+    "static/media/videoslider.png": "/static/media/videoslider.449fda3002eacb83049b.png",
     "static/media/Oswald-Light.woff2": "/static/media/Oswald-Light.fc4a26808cc995f6c371.woff2",
     "static/media/Bangers-Regular.woff2": "/static/media/Bangers-Regular.a8da759f9f292a8c563c.woff2",
+    "static/media/code.zip": "/static/media/code.04f10b19afd1fd4e9140.zip",
     "static/media/bgmesh.svg": "/static/media/bgmesh.34c9d3d07bc6bb129ce4.svg",
     "index.html": "/index.html",
-    "main.f7f1669e.css.map": "/static/css/main.f7f1669e.css.map",
-    "main.897cc435.js.map": "/static/js/main.897cc435.js.map"
+    "main.08626a0e.css.map": "/static/css/main.08626a0e.css.map",
+    "main.da26295c.js.map": "/static/js/main.da26295c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7f1669e.css",
-    "static/js/main.897cc435.js"
+    "static/css/main.08626a0e.css",
+    "static/js/main.da26295c.js"
   ]
 }
