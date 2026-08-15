@@ -51,10 +51,10 @@ export default function Main() {
       preview: ["Email", "Instagram"],
     },
     {
-      tagline: "Musings and ideas of mine and others I admire",
+      tagline: "Musings and ideas of mine",
       header: "Items of Interest",
       class: "ideas",
-      preview: ["Future Project Ideas", "Things That Caught My Interest"],
+      preview: ["Projects and Endeavors", "Things That Caught My Interest"],
     },
   ];
 
