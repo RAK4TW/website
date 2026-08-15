@@ -1,0 +1,216 @@
+.masonry-root {
+  --columns: 4;
+  --gutter: 16px;
+  --gap: calc(var(--gutter) / 2);
+  --row-h: 12rem;
+  --text-h: minmax(auto, 140px);
+
+  --color-bg: #f5f5f5;
+  --color-text: #333;
+
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem;
+  background: var(--color-bg);
+  text-align: center;
+  overflow: hidden;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(3, var(--row-h));
+  grid-template-areas:
+    'm1 m1 m7 m7'
+    'm1 m1 m7 m7'
+    'tx tx tx tx'
+    'm8 m4 m3 m3'
+    'm5 m5 m3 m3'
+    'm5 m5 m2 m6';
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+/* Assign each image to a grid area, "m1" through "m8" */
+.masonry-1 { grid-area: m1; }
+.masonry-2 { grid-area: m2; }
+.masonry-3 { grid-area: m3; }
+.masonry-4 { grid-area: m4; }
+.masonry-5 { grid-area: m5; }
+.masonry-6 { grid-area: m6; }
+.masonry-7 { grid-area: m7; }
+.masonry-8 { grid-area: m8; }
+
+.masonry-figure {
+  position: relative;
+  margin: 0;
+  background: #e0e0e0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.masonry-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.masonry-figure:hover .masonry-img {
+  transform: scale(1.04);
+}
+
+.masonry-text {
+  grid-area: tx;
+  padding: 2rem 1.5rem;
+  margin: 0;
+  position: relative;
+  color: #333;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  min-height: 240px;
+}
+
+.masonry-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  aspect-ratio: 1 / 1;
+  background: #0095f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+
+  a {
+    height: 24px;
+    display: block;
+  }
+}
+
+.masonry-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  a {
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+.masonry-message {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 90%;
+  color: #555;
+}
+
+/* Responsive - tablet */
+@media (max-width: 1024px) {
+  .masonry-root {
+    --columns: 3;
+    --row-h: 10rem;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(3, var(--row-h));
+    grid-template-areas:
+      'm1 m1 m7'
+      'm1 m1 m7'
+      'tx tx tx'
+      'm8 m4 m3'
+      'm5 m5 m3'
+      'm2 m6 m6';
+  }
+}
+
+/* Responsive - medium tablet */
+@media (max-width: 900px) {
+  .masonry-root {
+    --columns: 2;
+    --gap: 0.65rem;
+    --row-h: 10rem;
+    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(8, var(--row-h));
+    grid-template-areas:
+      'm1 m1'
+      'm1 m1'
+      'm7 m7'
+      'm7 m7'
+      'tx tx'
+      'm8 m4'
+      'm3 m3'
+      'm3 m3'
+      'm5 m5'
+      'm5 m5'
+      'm2 m6';
+  }
+}
+
+/* Responsive - mobile */
+@media (max-width: 768px) {
+  .masonry-root {
+    --columns: 2;
+    --row-h: 8rem;
+    --text-h: minmax(auto, 90px);
+    padding: 1rem;
+    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(7, var(--row-h));
+    grid-template-areas:
+      'm1 m1'
+      'm1 m1'
+      'tx tx'
+      'm8 m4'
+      'm3 m3'
+      'm5 m5'
+      'm5 m5'
+      'm2 m6'
+      'm7 m7'
+      'm7 m7';
+  }
+
+  .masonry-text {
+    padding: 5rem;
+  }
+
+  .masonry-title {
+    font-size: 1.1rem;
+  }
+
+  .masonry-message {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive - small mobile */
+@media (max-width: 480px) {
+  .masonry-root {
+    --columns: 1;
+    --row-h: 12rem;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    grid-template-rows: repeat(4, var(--row-h)) var(--text-h) repeat(4, var(--row-h));
+    grid-template-areas:
+      'm1'
+      'm2'
+      'm3'
+      'm4'
+      'tx'
+      'm5'
+      'm6'
+      'm7'
+      'm8';
+  }
+
+  .masonry-figure {
+    border-radius: 3px;
+  }
+}

@@ -63,9 +63,22 @@ export default function DetailboxProjects({ history }) {
             </div>
           </div>
 
+          <div className="row" style={{ paddingTop: "2rem" }}>
+            <div className="col-md-12">
+              <h3 style={{ color: "#1E8CE1" }}>Production Websites</h3>
+            </div>
+          </div>
+
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">Surity</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.surity.care"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">Surity</h2>
+              </a>
               <p>
                 Surity is a medical device solutions company, with a site built
                 with Shopify/Hydrogen. This site mostly uses Shopify as a
@@ -90,7 +103,14 @@ export default function DetailboxProjects({ history }) {
 
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">SureSmile</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.suresmile.com"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">SureSmile</h2>
+              </a>
               <p>
                 SureSmile was built from the ground up with Next.js/React,
                 TypeScript. This particular website has a modern medical design,
@@ -116,7 +136,14 @@ export default function DetailboxProjects({ history }) {
 
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">Byte</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://web.archive.org/web/20241007185421/https://www.byte.com/"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">Byte</h2>
+              </a>
               <p>
                 Developed new Shopify site using a custom theme utilizing the
                 latest CSS, HTML5 and pure JavaScript techniques from concept to
@@ -130,7 +157,7 @@ export default function DetailboxProjects({ history }) {
                 href="https://web.archive.org/web/20241007185421/https://www.byte.com/"
               >
                 <img
-                  alt="Byte clear aligners website"
+                  alt="Care website"
                   className="img-fluid"
                   src={byte}
                   loading="lazy"
@@ -158,7 +185,14 @@ export default function DetailboxProjects({ history }) {
           </div>
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">Business Growth Innovators</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.businessgrowthinnovators.com"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">Business Growth Innovators</h2>
+              </a>
               <p>
                 Developed entire site, including all design, images,
                 functionality and more. Built using WordPress.
@@ -181,7 +215,14 @@ export default function DetailboxProjects({ history }) {
           </div>
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">SDA Partnership USA</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://web.archive.org/web/20170723072442/http://www.sdapartnershipusa.com/sda-design.html"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">SDA Partnership USA</h2>
+              </a>
               <p>Custom UX/UI solution for architecture firm's website. </p>
             </div>
             <div className="col-md-4">
@@ -201,7 +242,14 @@ export default function DetailboxProjects({ history }) {
           </div>
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">Accelerated Mobile Pages (AMP)</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://rak4tw.github.io/INTACT/"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">Accelerated Mobile Pages (AMP)</h2>
+              </a>
               <p>
                 Website design created and developed around the AMP framework
                 for near instantaneous loading.
@@ -224,7 +272,14 @@ export default function DetailboxProjects({ history }) {
           </div>
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">Jewelry By Mardo</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://web.archive.org/web/20160430191043/http://jewelrybymardo.com/"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">Jewelry By Mardo</h2>
+              </a>
               <p>
                 Took design from PhotoShop file and built it out using Bootstrap
                 utilizing the Modx CMS. Wrote custom PHP to properly display
@@ -249,9 +304,16 @@ export default function DetailboxProjects({ history }) {
           </div>
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">
-                Jaguar Land Rover Facility Design
-              </h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.jaguarlandroverfacilitydesign.com/"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">
+                  Jaguar Land Rover Facility Design
+                </h2>
+              </a>
               <p>
                 Built and maintained architecture documents website, which only
                 certain authorized members could access.
@@ -274,7 +336,14 @@ export default function DetailboxProjects({ history }) {
           </div>
           <div className="row project-entry">
             <div className="col-md-8">
-              <h2 className="about-format">VM-Tech</h2>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://web.archive.org/web/20160726015500/https://vm-tech.com/"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2 className="about-format">VM-Tech</h2>
+              </a>
               <p>
                 Computer services website built on Modx CMS, and uses a
                 completely separate (not responsive) mobile site.
@@ -293,6 +362,11 @@ export default function DetailboxProjects({ history }) {
                   loading="lazy"
                 />
               </a>
+            </div>
+          </div>
+          <div className="row" style={{ paddingTop: "2rem" }}>
+            <div className="col-md-12">
+              <h3 style={{ color: "#1E8CE1" }}>UI/UX Designs</h3>
             </div>
           </div>
           <div className="row project-entry">

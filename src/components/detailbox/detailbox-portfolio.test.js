@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
-import DetailboxProjects from "./detailbox-projects";
+import DetailboxProjects from "./detailbox-portfolio";
 
 // Mock all image imports
 jest.mock("../../assets/agility.jpg", () => "agility.jpg");
@@ -110,9 +110,7 @@ describe("DetailboxProjects Component", () => {
     expect(
       screen.getByAltText("SureSmile orthodontic website"),
     ).toBeInTheDocument();
-    expect(
-      screen.getByAltText("Byte clear aligners website"),
-    ).toBeInTheDocument();
+    expect(screen.getByAltText("Care system website")).toBeInTheDocument();
     expect(
       screen.getByAltText("Agility Fuel Solutions website"),
     ).toBeInTheDocument();

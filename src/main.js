@@ -9,8 +9,9 @@ import {
 import Techlogos from "./components/techlogos.js";
 import DetailboxAbout from "./components/detailbox/detailbox-about.js";
 import DetailboxContact from "./components/detailbox/detailbox-contact.js";
-import DetailboxProjects from "./components/detailbox/detailbox-projects.js";
+import DetailboxProjects from "./components/detailbox/detailbox-portfolio.js";
 import DetailboxIdeas from "./components/detailbox/detailbox-ideas.js";
+import DetailboxCodeSamples from "./components/detailbox/detailbox-code-samples.js";
 import Mainboxes from "./components/combined-mainboxes.js";
 import "./style.scss";
 
@@ -42,6 +43,12 @@ export default function Main() {
       header: "Portfolio",
       class: "portfolio",
       preview: ["Past Professional Projects", "Fun Personal Projects"],
+    },
+    {
+      tagline: "Technical implementations and code examples",
+      header: "Code Samples",
+      class: "code-samples",
+      preview: ["React Components", "Technical Solutions"],
     },
     {
       tagline: "Methods of getting in touch with me",
@@ -91,6 +98,9 @@ export default function Main() {
                     <Link to="/portfolio">Portfolio</Link>
                   </li>
                   <li>
+                    <Link to="/code-samples">Code Samples</Link>
+                  </li>
+                  <li>
                     <Link to="/contact">Contact</Link>
                   </li>
                   <li>
@@ -124,6 +134,11 @@ export default function Main() {
                     exact
                     path="/projects"
                     render={() => <Redirect to="/portfolio" />}
+                  />
+                  <Route
+                    exact
+                    path="/code-samples"
+                    component={DetailboxCodeSamples}
                   />
                   <Route exact path="/contact" component={DetailboxContact} />
                   <Route exact path="/ideas" component={DetailboxIdeas} />

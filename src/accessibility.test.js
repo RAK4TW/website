@@ -4,7 +4,7 @@ import { createMemoryHistory } from "history";
 import { axe, toHaveNoViolations } from "jest-axe";
 import Main from "./main";
 import DetailboxAbout from "./components/detailbox/detailbox-about";
-import DetailboxProjects from "./components/detailbox/detailbox-projects";
+import DetailboxProjects from "./components/detailbox/detailbox-portfolio";
 import DetailboxContact from "./components/detailbox/detailbox-contact";
 import DetailboxIdeas from "./components/detailbox/detailbox-ideas";
 
@@ -222,9 +222,7 @@ describe("Accessibility Tests", () => {
       expect(
         screen.getByAltText("SureSmile orthodontic website"),
       ).toBeInTheDocument();
-      expect(
-        screen.getByAltText("Byte clear aligners website"),
-      ).toBeInTheDocument();
+      expect(screen.getByAltText("Care system website")).toBeInTheDocument();
     });
 
     it("should support keyboard navigation", () => {

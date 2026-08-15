@@ -1,0 +1,207 @@
+.pc-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .pc-group {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.pc-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.pc-card {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e3e6ea;
+  border-radius: 14px;
+  padding: 32px 24px 28px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.pc-card.accent-green {
+  border-color: #cdeadd;
+  background: linear-gradient(180deg, #f2faf6 0%, #ffffff 40%);
+}
+
+.pc-card.accent-slate {
+  border-color: #d7dae8;
+  background: linear-gradient(180deg, #f5f6fb 0%, #ffffff 40%);
+}
+
+.pc-card.accent-dark {
+  border-color: #e3e6ea;
+  background: #ffffff;
+}
+
+.pc-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.pc-heading {
+  margin: 0 0 20px;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #142033;
+  font-family: "Oswald", sans-serif;
+}
+
+.pc-eyebrow {
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+
+.accent-green .pc-eyebrow {
+  color: #2f6b4f;
+}
+
+.accent-slate .pc-eyebrow {
+  color: #5a6685;
+}
+
+.accent-dark .pc-eyebrow em,
+.pc-heading em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.pc-price-block {
+  margin: 0 0 4px;
+}
+
+.pc-label {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #6b7785;
+}
+
+.pc-price {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #142033;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.pc-price-unit {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+
+.accent-green .pc-price {
+  color: #2f6b4f;
+}
+
+.pc-price--onetime {
+  font-size: 32px;
+}
+
+.pc-info-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  margin-left: 2px;
+  cursor: pointer;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.75;
+}
+
+.pc-info-btn:hover {
+  opacity: 1;
+}
+
+.pc-note {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6b7785;
+}
+
+.accent-green .pc-note {
+  color: #2f6b4f;
+}
+
+.pc-separator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+  color: #9aa2b1;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pc-separator::before,
+.pc-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e3e6ea;
+}
+
+.pc-cta-wrap {
+  margin-top: 22px;
+}
+
+.pc-cta {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  border-radius: 8px;
+  background: #0095f6;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.pc-cta:hover {
+  background: #0095f6;
+}
+
+.pc-more-link {
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #142033;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.pc-more-link:hover {
+  text-decoration: underline;
+}
