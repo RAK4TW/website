@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -f",
+    "deploy": "gh-pages -d build -f --no-history",
     "test": "react-scripts --openssl-legacy-provider test",
     "test:coverage": "react-scripts --openssl-legacy-provider test --coverage --watchAll=false",
     "test:ci": "react-scripts --openssl-legacy-provider test --coverage --watchAll=false --ci",
