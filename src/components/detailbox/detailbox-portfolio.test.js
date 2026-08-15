@@ -140,9 +140,7 @@ describe("DetailboxProjects Component", () => {
   it("select production components section displays code sample images and links to /code-samples", () => {
     renderWithRouter(<DetailboxProjects />);
 
-    expect(
-      screen.getByText("Select Production Components"),
-    ).toBeInTheDocument();
+    expect(screen.getByText("Production Components")).toBeInTheDocument();
 
     const pricingCardsImg = screen.getByAltText(
       "Pricing Cards component code sample",

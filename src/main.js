@@ -45,12 +45,6 @@ export default function Main() {
       preview: ["Past Professional Projects", "Fun Personal Projects"],
     },
     {
-      tagline: "Technical implementations and code examples",
-      header: "Code Samples",
-      class: "code-samples",
-      preview: ["React Components", "Technical Solutions"],
-    },
-    {
       tagline: "Methods of getting in touch with me",
       header: "Contact Info",
       class: "contact",
@@ -96,9 +90,6 @@ export default function Main() {
                   </li>
                   <li>
                     <Link to="/portfolio">Portfolio</Link>
-                  </li>
-                  <li>
-                    <Link to="/code-samples">Code Samples</Link>
                   </li>
                   <li>
                     <Link to="/contact">Contact</Link>

@@ -22,7 +22,6 @@ import vmt from "../../assets/vmt.jpg";
 
 export default function DetailboxProjects({ history }) {
   const handleClose = () => {
-    // Clear title and session storage on exit
     document.title =
       "Ryan Koskela - Web developer, writer, sports and food/drink aficionado, and so much more";
     sessionStorage.removeItem("pageTitle");
@@ -67,6 +66,18 @@ export default function DetailboxProjects({ history }) {
           <div className="row">
             <div className="col-md-12">
               <p>A selection of my professional work and accomplishments.</p>
+            </div>
+            <div className="col-md-12">
+              <h3 style={{ color: "#1E8CE1", marginTop: "1rem" }}>
+                <Link
+                  to="https://github.com/RAK4TW"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginTop: "1rem" }}
+                >
+                  View My Github
+                </Link>
+              </h3>
             </div>
           </div>
           <div className="row" style={{ paddingTop: "2rem" }}>

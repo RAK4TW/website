@@ -1,5 +1,7 @@
 import { Animated } from "react-animated-css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import codeZip from "../../assets/code.zip";
 import Masonry from "./code/Masonry";
 import Blockquote, { BlockquoteGroup } from "./code/Blockquote";
 import PricingCard, { PricingCardGroup } from "./code/PricingCard";
@@ -53,6 +55,15 @@ export default function DetailboxCodeSamples({ history }) {
               <p>
                 A selection of technical implementations and code samples from
                 my projects.
+              </p>
+              <p>
+                <a
+                  href={codeZip}
+                  download="code.zip"
+                  aria-label="Download all code samples in a zip archive"
+                >
+                  Download Code Samples (.zip)
+                </a>
               </p>
             </div>
           </div>
