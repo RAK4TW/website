@@ -1,10 +1,5 @@
 import "./PricingCard.css";
 
-/**
- * Small stand-in icon set for the plan illustrations shown in the
- * reference screenshot (sun / moon / dental chair). Swap these out for
- * your real illustration set when wiring this back into a design system.
- */
 const icons = {
   sun: (
     <svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true">

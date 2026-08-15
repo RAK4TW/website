@@ -1,3 +1,4 @@
+import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
@@ -7,22 +8,30 @@ import DetailboxProjects from "./detailbox-portfolio";
 jest.mock("../../assets/agility.jpg", () => "agility.jpg");
 jest.mock("../../assets/bgi.jpg", () => "bgi.jpg");
 jest.mock("../../assets/byte_thumb.jpg", () => "byte.jpg");
+jest.mock("../../assets/cards.png", () => "cards.png");
 jest.mock("../../assets/intact-pic.jpg", () => "intact.jpg");
 jest.mock("../../assets/jlrfd.jpg", () => "jlrfd.jpg");
 jest.mock("../../assets/mardo.jpg", () => "mardo.jpg");
+jest.mock("../../assets/masonry.png", () => "masonry.png");
 jest.mock("../../assets/mdc1.jpg", () => "mdc1.jpg");
 jest.mock("../../assets/mdc2.jpg", () => "mdc2.jpg");
 jest.mock("../../assets/mdc3.jpg", () => "mdc3.jpg");
 jest.mock("../../assets/mdc4.jpg", () => "mdc4.jpg");
+jest.mock("../../assets/quotes.png", () => "quotes.png");
 jest.mock("../../assets/sda.jpg", () => "sda.jpg");
 jest.mock("../../assets/suresmile.jpg", () => "suresmile.jpg");
 jest.mock("../../assets/surity.jpg", () => "surity.jpg");
+jest.mock("../../assets/videoslider.png", () => "videoslider.png");
 jest.mock("../../assets/vmt.jpg", () => "vmt.jpg");
 
 const renderWithRouter = (component) => {
   const history = createMemoryHistory();
   return {
-    ...render(<Router history={history}>{component}</Router>),
+    ...render(
+      <Router history={history}>
+        {React.cloneElement(component, { history })}
+      </Router>,
+    ),
     history,
   };
 };
@@ -126,6 +135,39 @@ describe("DetailboxProjects Component", () => {
       /Responsive Mobile Design concept/,
     );
     expect(mobileConceptImages.length).toBe(4);
+  });
+
+  it("select production components section displays code sample images and links to /code-samples", () => {
+    renderWithRouter(<DetailboxProjects />);
+
+    expect(
+      screen.getByText("Select Production Components"),
+    ).toBeInTheDocument();
+
+    const pricingCardsImg = screen.getByAltText(
+      "Pricing Cards component code sample",
+    );
+    const quotesImg = screen.getByAltText("Blockquotes component code sample");
+    const masonryImg = screen.getByAltText("Masonry component code sample");
+    const videoSliderImg = screen.getByAltText(
+      "Video slider component code sample",
+    );
+
+    expect(pricingCardsImg).toBeInTheDocument();
+    expect(quotesImg).toBeInTheDocument();
+    expect(masonryImg).toBeInTheDocument();
+    expect(videoSliderImg).toBeInTheDocument();
+
+    expect(pricingCardsImg.closest("a")).toHaveAttribute(
+      "href",
+      "/code-samples",
+    );
+    expect(quotesImg.closest("a")).toHaveAttribute("href", "/code-samples");
+    expect(masonryImg.closest("a")).toHaveAttribute("href", "/code-samples");
+    expect(videoSliderImg.closest("a")).toHaveAttribute(
+      "href",
+      "/code-samples",
+    );
   });
 
   it("calls history.replace when close button is clicked", () => {

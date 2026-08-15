@@ -1,18 +1,23 @@
 import { Animated } from "react-animated-css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import agility from "../../assets/agility.jpg";
 import bgi from "../../assets/bgi.jpg";
 import byte from "../../assets/byte_thumb.jpg";
+import cards from "../../assets/cards.png";
 import intactpic from "../../assets/intact-pic.jpg";
 import jlrfd from "../../assets/jlrfd.jpg";
 import mardo from "../../assets/mardo.jpg";
+import masonry from "../../assets/masonry.png";
 import mdc1 from "../../assets/mdc1.jpg";
 import mdc2 from "../../assets/mdc2.jpg";
 import mdc3 from "../../assets/mdc3.jpg";
 import mdc4 from "../../assets/mdc4.jpg";
+import quotes from "../../assets/quotes.png";
 import sda from "../../assets/sda.jpg";
 import suresmile from "../../assets/suresmile.jpg";
 import surity from "../../assets/surity.jpg";
+import videoslider from "../../assets/videoslider.png";
 import vmt from "../../assets/vmt.jpg";
 
 export default function DetailboxProjects({ history }) {
@@ -21,7 +26,9 @@ export default function DetailboxProjects({ history }) {
     document.title =
       "Ryan Koskela - Web developer, writer, sports and food/drink aficionado, and so much more";
     sessionStorage.removeItem("pageTitle");
-    history.replace("/");
+    if (history && history.replace) {
+      history.replace("/");
+    }
   };
 
   useEffect(() => {
@@ -62,13 +69,64 @@ export default function DetailboxProjects({ history }) {
               <p>A selection of my professional work and accomplishments.</p>
             </div>
           </div>
-
+          <div className="row" style={{ paddingTop: "2rem" }}>
+            <div className="col-md-12">
+              <h3 style={{ color: "#1E8CE1" }}>Production Components</h3>
+            </div>
+          </div>
+          <div className="row project-entry">
+            <div className="col-md-12 mb-3">
+              <p>
+                Select React components I've made. &nbsp;
+                <Link to="/code-samples">View all Code Samples</Link>
+              </p>
+            </div>
+            <div className="col-md-6 col-12 mb-4 text-center">
+              <Link to="/code-samples">
+                <img
+                  alt="Pricing Cards component code sample"
+                  className="img-fluid"
+                  src={cards}
+                  loading="lazy"
+                />
+              </Link>
+            </div>
+            <div className="col-md-6 col-12 mb-4 text-center">
+              <Link to="/code-samples">
+                <img
+                  alt="Blockquotes component code sample"
+                  className="img-fluid"
+                  src={quotes}
+                  loading="lazy"
+                />
+              </Link>
+            </div>
+            <div className="col-md-6 col-12 mb-4 text-center">
+              <Link to="/code-samples">
+                <img
+                  alt="Masonry component code sample"
+                  className="img-fluid"
+                  src={masonry}
+                  loading="lazy"
+                />
+              </Link>
+            </div>
+            <div className="col-md-6 col-12 mb-4 text-center">
+              <Link to="/code-samples">
+                <img
+                  alt="Video slider component code sample"
+                  className="img-fluid"
+                  src={videoslider}
+                  loading="lazy"
+                />
+              </Link>
+            </div>
+          </div>
           <div className="row" style={{ paddingTop: "2rem" }}>
             <div className="col-md-12">
               <h3 style={{ color: "#1E8CE1" }}>Production Websites</h3>
             </div>
           </div>
-
           <div className="row project-entry">
             <div className="col-md-8">
               <a
@@ -100,7 +158,6 @@ export default function DetailboxProjects({ history }) {
               </a>
             </div>
           </div>
-
           <div className="row project-entry">
             <div className="col-md-8">
               <a
@@ -133,7 +190,6 @@ export default function DetailboxProjects({ history }) {
               </a>
             </div>
           </div>
-
           <div className="row project-entry">
             <div className="col-md-8">
               <a
@@ -157,7 +213,7 @@ export default function DetailboxProjects({ history }) {
                 href="https://web.archive.org/web/20241007185421/https://www.byte.com/"
               >
                 <img
-                  alt="Care website"
+                  alt="Care system website"
                   className="img-fluid"
                   src={byte}
                   loading="lazy"
@@ -165,7 +221,6 @@ export default function DetailboxProjects({ history }) {
               </a>
             </div>
           </div>
-
           <div className="row project-entry">
             <div className="col-md-8">
               <h2 className="about-format">Agility Fuel Solutions</h2>

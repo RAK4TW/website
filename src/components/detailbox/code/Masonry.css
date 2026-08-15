@@ -17,27 +17,46 @@
   display: grid;
   gap: var(--gap);
   grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
-  grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(3, var(--row-h));
+  grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(
+      3,
+      var(--row-h)
+    );
   grid-template-areas:
-    'm1 m1 m7 m7'
-    'm1 m1 m7 m7'
-    'tx tx tx tx'
-    'm8 m4 m3 m3'
-    'm5 m5 m3 m3'
-    'm5 m5 m2 m6';
+    "m1 m1 m7 m7"
+    "m1 m1 m7 m7"
+    "tx tx tx tx"
+    "m8 m4 m3 m3"
+    "m5 m5 m3 m3"
+    "m5 m5 m2 m6";
   border-radius: 4px;
   margin-top: 2rem;
 }
 
 /* Assign each image to a grid area, "m1" through "m8" */
-.masonry-1 { grid-area: m1; }
-.masonry-2 { grid-area: m2; }
-.masonry-3 { grid-area: m3; }
-.masonry-4 { grid-area: m4; }
-.masonry-5 { grid-area: m5; }
-.masonry-6 { grid-area: m6; }
-.masonry-7 { grid-area: m7; }
-.masonry-8 { grid-area: m8; }
+.masonry-1 {
+  grid-area: m1;
+}
+.masonry-2 {
+  grid-area: m2;
+}
+.masonry-3 {
+  grid-area: m3;
+}
+.masonry-4 {
+  grid-area: m4;
+}
+.masonry-5 {
+  grid-area: m5;
+}
+.masonry-6 {
+  grid-area: m6;
+}
+.masonry-7 {
+  grid-area: m7;
+}
+.masonry-8 {
+  grid-area: m8;
+}
 
 .masonry-figure {
   position: relative;
@@ -108,7 +127,9 @@
 .masonry-message {
   margin: 0;
   font-size: 0.9rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   text-align: center;
   line-height: 1.5;
   max-width: 90%;
@@ -123,14 +144,17 @@
     width: 100%;
     box-sizing: border-box;
     grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
-    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(3, var(--row-h));
+    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(
+        3,
+        var(--row-h)
+      );
     grid-template-areas:
-      'm1 m1 m7'
-      'm1 m1 m7'
-      'tx tx tx'
-      'm8 m4 m3'
-      'm5 m5 m3'
-      'm2 m6 m6';
+      "m1 m1 m7"
+      "m1 m1 m7"
+      "tx tx tx"
+      "m8 m4 m3"
+      "m5 m5 m3"
+      "m2 m6 m6";
   }
 }
 
@@ -140,19 +164,22 @@
     --columns: 2;
     --gap: 0.65rem;
     --row-h: 10rem;
-    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(8, var(--row-h));
+    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(
+        8,
+        var(--row-h)
+      );
     grid-template-areas:
-      'm1 m1'
-      'm1 m1'
-      'm7 m7'
-      'm7 m7'
-      'tx tx'
-      'm8 m4'
-      'm3 m3'
-      'm3 m3'
-      'm5 m5'
-      'm5 m5'
-      'm2 m6';
+      "m1 m1"
+      "m1 m1"
+      "m7 m7"
+      "m7 m7"
+      "tx tx"
+      "m8 m4"
+      "m3 m3"
+      "m3 m3"
+      "m5 m5"
+      "m5 m5"
+      "m2 m6";
   }
 }
 
@@ -163,23 +190,26 @@
     --row-h: 8rem;
     --text-h: minmax(auto, 90px);
     padding: 1rem;
-    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(7, var(--row-h));
+    grid-template-rows: repeat(2, var(--row-h)) var(--text-h) repeat(
+        7,
+        var(--row-h)
+      );
     grid-template-areas:
-      'm1 m1'
-      'm1 m1'
-      'tx tx'
-      'm8 m4'
-      'm3 m3'
-      'm5 m5'
-      'm5 m5'
-      'm2 m6'
-      'm7 m7'
-      'm7 m7';
+      "m1 m1"
+      "m1 m1"
+      "tx tx"
+      "m8 m4"
+      "m3 m3"
+      "m5 m5"
+      "m5 m5"
+      "m2 m6"
+      "m7 m7"
+      "m7 m7";
   }
 
-  .masonry-text {
+  /* .masonry-text {
     padding: 5rem;
-  }
+  } */
 
   .masonry-title {
     font-size: 1.1rem;
@@ -197,17 +227,20 @@
     --row-h: 12rem;
     gap: 0.5rem;
     padding: 0.75rem;
-    grid-template-rows: repeat(4, var(--row-h)) var(--text-h) repeat(4, var(--row-h));
+    grid-template-rows: repeat(4, var(--row-h)) var(--text-h) repeat(
+        4,
+        var(--row-h)
+      );
     grid-template-areas:
-      'm1'
-      'm2'
-      'm3'
-      'm4'
-      'tx'
-      'm5'
-      'm6'
-      'm7'
-      'm8';
+      "m1"
+      "m2"
+      "m3"
+      "m4"
+      "tx"
+      "m5"
+      "m6"
+      "m7"
+      "m8";
   }
 
   .masonry-figure {

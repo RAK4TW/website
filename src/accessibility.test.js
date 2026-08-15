@@ -23,16 +23,20 @@ jest.mock("./assets/Koskela_Ryan_Resume.pdf", () => "test-resume.pdf");
 jest.mock("./assets/agility.jpg", () => "agility.jpg");
 jest.mock("./assets/bgi.jpg", () => "bgi.jpg");
 jest.mock("./assets/byte_thumb.jpg", () => "byte.jpg");
+jest.mock("./assets/cards.png", () => "cards.png");
 jest.mock("./assets/intact-pic.jpg", () => "intact.jpg");
 jest.mock("./assets/jlrfd.jpg", () => "jlrfd.jpg");
 jest.mock("./assets/mardo.jpg", () => "mardo.jpg");
+jest.mock("./assets/masonry.png", () => "masonry.png");
 jest.mock("./assets/mdc1.jpg", () => "mdc1.jpg");
 jest.mock("./assets/mdc2.jpg", () => "mdc2.jpg");
 jest.mock("./assets/mdc3.jpg", () => "mdc3.jpg");
 jest.mock("./assets/mdc4.jpg", () => "mdc4.jpg");
+jest.mock("./assets/quotes.png", () => "quotes.png");
 jest.mock("./assets/sda.jpg", () => "sda.jpg");
 jest.mock("./assets/suresmile.jpg", () => "suresmile.jpg");
 jest.mock("./assets/surity.jpg", () => "surity.jpg");
+jest.mock("./assets/videoslider.png", () => "videoslider.png");
 jest.mock("./assets/vmt.jpg", () => "vmt.jpg");
 
 // Mock techlogos and mainboxes
