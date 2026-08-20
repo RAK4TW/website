@@ -1,8 +1,5 @@
+import { cn } from "../../../utils/cn";
 import "./Masonry.css";
-
-function cn(...classes: (string | undefined | null)[]): string {
-  return classes.filter(Boolean).join(" ");
-}
 
 interface Image {
   id: string | number;

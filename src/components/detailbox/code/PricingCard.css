@@ -185,10 +185,12 @@
   text-align: center;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
+  cursor: pointer;
 }
 
 .pc-cta:hover {
   background: #0095f6;
+  text-decoration: none;
 }
 
 .pc-more-link {
@@ -200,8 +202,9 @@
   color: #142033;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
+  cursor: pointer;
 }
 
 .pc-more-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }

@@ -1,3 +1,4 @@
+import { cn } from "../../../utils/cn";
 import "./PricingCard.css";
 
 const icons = {
@@ -115,7 +116,7 @@ const PricingCard = ({
   moreHref = "#",
 }) => (
   <div className="pc-wrap">
-    <div className={`pc-card accent-${accent}`}>
+    <div className={cn("pc-card", `accent-${accent}`)}>
       <div className="pc-icon">{icons[icon]}</div>
 
       <h3 className="pc-heading">

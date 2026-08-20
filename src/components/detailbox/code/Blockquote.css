@@ -77,6 +77,11 @@
   align-items: center;
   text-decoration: none;
   text-align: left;
+  cursor: pointer;
+}
+
+.attribution:hover {
+  text-decoration: none;
 }
 
 .attribution1 {

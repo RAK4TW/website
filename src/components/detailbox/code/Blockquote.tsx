@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { cn } from "../../../utils/cn";
 import "./Blockquote.css";
 
 function QuoteIcon({ className }) {
@@ -39,14 +40,14 @@ const Blockquote = ({
 
   return (
     <blockquote
-      className={`blockquote variant-${variant} ${className}`}
+      className={cn("blockquote", `variant-${variant}`, className)}
       {...restProps}
     >
       <div className="quoteIconWrap">
         {decorativeQuotes && <QuoteIcon className="quoteIcon" />}
       </div>
 
-      {quote && <p className={`quote ${quoteSize}`}>{quote}</p>}
+      {quote && <p className={cn("quote", quoteSize)}>{quote}</p>}
 
       <div className="attributions">
         {attribution1 &&

@@ -1,12 +1,12 @@
 import { Animated } from "react-animated-css";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import codeZip from "../../assets/code.zip";
 import Masonry from "./code/Masonry";
 import Blockquote, { BlockquoteGroup } from "./code/Blockquote";
 import PricingCard, { PricingCardGroup } from "./code/PricingCard";
 import VideoReview from "./code/VideoReview";
 import { testimonials } from "./code/VideoReview.testimonials";
+import CtaCalloutBanner from "./code/CtaCalloutBanner";
 
 export default function DetailboxCodeSamples({ history }) {
   const handleClose = () => {
@@ -111,6 +111,39 @@ export default function DetailboxCodeSamples({ history }) {
                 />
               </PricingCardGroup>
             </div>
+            <div className="col-md-12 mt-4">
+              <h2 className="Main-title">CTA Callout Banner</h2>
+            </div>
+            <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24, width: "100%" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 32,
+                }}
+              >
+                <CtaCalloutBanner
+                  heading="Prefer to start with a free consultation?"
+                  subheading="Discover Acme+"
+                  linkUrl="/code-samples"
+                  linkText="Learn more"
+                  imageSrc="https://picsum.photos/seed/acme-plus/600/500"
+                />
+
+                <CtaCalloutBanner
+                  heading="No link, no subheading — just a heading and an image"
+                  imageSrc="https://picsum.photos/seed/acme-plain/600/500"
+                />
+
+                <CtaCalloutBanner
+                  heading="Custom text with a click handler instead of a link"
+                  subheading="Great for opening a modal"
+                  linkText="Get started"
+                  imageSrc="https://picsum.photos/seed/acme-click/600/500"
+                  onClick={() => alert("Banner clicked!")}
+                />
+              </div>
+            </div>
             <div className="col-md-12 mt-2">
               <h2 className="Main-title">Blockquotes</h2>
             </div>
@@ -120,13 +153,13 @@ export default function DetailboxCodeSamples({ history }) {
                   quote="Hundreds of customers who have used (HFV) comment that they either feel less discomfort or don't feel pain when switching aligners every 5 to 7 days."
                   attribution1="Orthodontic Practice Magazine"
                   attribution2="November 2017"
-                  onClick={() => {}}
+                  onClick={() => { }}
                 />
                 <Blockquote
                   quote="It can be hypothesized that a vibration device operating in the high frequency range would likely be most effective in creating orthodontic tooth movement as well as offering shorter wear times impacting compliance."
                   attribution1="Dental Tribute Magazine"
                   attribution2="2016"
-                  onClick={() => {}}
+                  onClick={() => { }}
                 />
               </BlockquoteGroup>
             </div>

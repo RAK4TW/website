@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { cn } from "../../../utils/cn";
 import "./VideoReview.css";
 
 function PlayIcon({ className = "" } = {}) {
@@ -138,7 +139,7 @@ function Slider({ autoPlayInterval, loop = true, onIndexChange, children }) {
             role="tab"
             aria-selected={i === index}
             aria-label={`Show testimonial ${i + 1}`}
-            className={`vr-dot ${i === index ? "active" : ""}`}
+            className={cn("vr-dot", i === index && "active")}
             onClick={() => goTo(i)}
           />
         ))}
